@@ -1,0 +1,150 @@
+.spending{
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    margin-top: 17px;
+    overflow: hidden;
+    width: 541px;
+}
+
+.spending__period{
+    align-items: center;
+    color: hsl(25, 47%, 15%);
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    height: 20%;
+    padding-left: 50px;
+}
+
+.spending__week{
+    display: flex;
+    justify-content: space-around;
+    height: 47%;
+    align-items: flex-end;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.spending__week li{
+    color:hsl(28, 10%, 53%);
+    width: 65px;
+    text-align: center;
+}
+
+.graphic{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 65px;
+    border-radius: 5px;
+    justify-self: unset;
+    align-items: center;
+    gap: 10px;
+}
+
+.column{
+    align-items: center;
+    background-color:hsl(10, 79%, 65%);
+    width: 80%;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.column:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.weekday{
+    background-color: hsl(186, 34%, 60%);
+}
+
+.value{
+    color: hsl(33, 100%, 98%);
+    align-items: center;
+    background-color: hsl(25, 47%, 15%);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.spending__informe{
+    margin: 40px 34px 0 34px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 33%;
+    padding: 0 50px;
+    border-top: 2px solid hsl(28, 10%, 53%);
+}
+
+.spending__informe p{
+    color:hsl(28, 10%, 53%);
+}
+
+.spending__informe--total-mouth h2{
+    color: hsl(25, 47%, 15%);
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.spending__informe--percentage{
+    text-align: end;
+}
+
+.spending__informe--percentage h3{
+    color: hsl(25, 47%, 15%);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 375px){
+    .spending{
+        width: 90vw;
+        height: 400px;
+    }
+
+    .spending__period{
+        height: 15%;
+        font-size: 23px; 
+        padding-left: 20px; 
+    }
+
+    .spending__week{
+        padding: 0 10px;
+        height: 55%;
+    }
+    
+    .spending__week li{
+        width: 40px;
+        font-size: 13px;
+    }
+
+    .graphic{
+        width: 40px;
+    }
+
+    .spending__informe{
+        margin: 20px 18px 0 18px;
+        padding: 0 20px;
+        height: 30%;
+    }
+
+    .spending__informe p{
+        font-size: 15px;
+    }
+
+    .spending__informe--total-mouth h2{
+        font-size: 30px;
+    }
+
+    .spending__informe--percentage{
+        font-size: 16px;
+    }
+}

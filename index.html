@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/my-balance/style.css">
+  <link rel="stylesheet" href="./css/spending/style.css">
+  <link rel="stylesheet" href="./css/attribution/style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body onload="graphic()">
+  <section class="my-balance">
+    <div class="my-balance__informe">
+      <p>My balance</p>
+      <h2>$921.48</h2>
+    </div>
+    <div class="my-balance__logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+  </section>
+
+  <main class="spending">
+    <h1 class="spending__period">Spending - Last 7 days</h1>
+    <ul class="spending__week">
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('mon')"></div>
+          <h4 id="mon"></h4>
+        </div>
+        mon
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('tue')"></div>
+          <h4 id="tue"></h4>
+        </div>
+        tue
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('wed')"></div>
+          <h4 id="wed"></h4>
+        </div>
+        wed
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('thu')"></div>
+          <h4 id="thu"></h4>
+        </div>
+        thu
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('fri')"></div>
+          <h4 id="fri"></h4>
+        </div>
+        fri
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('sat')"></div>
+          <h4 id="sat"></h4>
+        </div>
+        sat
+      </li>
+      <li>
+        <div class="graphic">
+          <div class="column" onmouseover="showValue('sun')"></div>
+          <h4 id="sun"></h4>
+        </div>
+        sun
+      </li>
+    </ul>
+    <div class="spending__informe">
+      <div class="spending__informe--total-mouth">
+        <p>Total this month</p>
+        <h2>$478.33</h2>
+      </div>
+
+      <div class="spending__informe--percentage">
+        <h3>+2.4%</h3>
+        <p>from last month</p>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

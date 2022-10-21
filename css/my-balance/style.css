@@ -1,0 +1,58 @@
+.my-balance{
+    align-items: center;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    color: hsl(33, 100%, 98%);
+    display: flex;
+    height: 131px;
+    justify-content: space-between;
+    margin-top: 49px;
+    overflow: hidden;
+    width: 541px;
+}
+
+.my-balance__informe{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.my-balance h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.my-balance__logo{
+    padding: 40px;
+}
+
+.my-balance__logo img{
+    height: 55px;
+} 
+
+@media screen and (max-width: 375px){
+    .my-balance{
+        margin-top: 18%;
+        width: 90vw;
+        height: 100px;
+        font-size: 15px;
+    }
+
+    .my-balance h2{
+        font-size: 23px;
+    }
+
+    .my-balance__informe{
+        padding: 23px;
+    }
+
+    .my-balance__logo{
+        padding: 23px;
+    }
+
+    .my-balance__logo img{
+        height: 43px;
+    }
+}
